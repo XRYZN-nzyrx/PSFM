@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List, Optional
-from expense_classifier import train_expense_model, categorize_expenses
-from finance_calculations import calculate_savings_potential, check_savings_goal, suggest_savings_goal
-from salary_predictor import predict_future_salary
+from backend.expense_classifier import train_expense_model, categorize_expenses
+from backend.finance_calculations import calculate_savings_potential, check_savings_goal, suggest_savings_goal
+from backend.salary_predictor import predict_future_salary
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse

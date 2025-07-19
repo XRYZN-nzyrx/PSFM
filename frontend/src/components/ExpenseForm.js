@@ -32,13 +32,6 @@ export default function FinanceForm({ setResult }) {
     setExpenses(expenses.filter((_, i) => i !== index));
   };
 
-  const handleInput = (e, setter) => {
-    const value = e.target.value;
-    if (/^-?\d*\.?\d*$/.test(value)) {
-      setter(value);
-    }
-  };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -61,28 +54,24 @@ export default function FinanceForm({ setResult }) {
       setLoading(false);
       return;
     }
-    if(salaryNum <=0)
-    {
+    if (salaryNum <= 0) {
       setError("❌ Current salary must be greater than 0.");
       setErrorKey(prev => prev + 1);
       setLoading(false);
       return;
     }
-
     if (savingsGoalNum <= 0 || isNaN(savingsGoalNum)) {
       setError("❌ Savings goal must be greater than 0.");
       setErrorKey(prev => prev + 1);
       setLoading(false);
       return;
     }
-
     if (totalYearlyExpenses > incomeNum) {
       setError("❌ Total expenses exceed your yearly income.");
       setErrorKey(prev => prev + 1);
       setLoading(false);
       return;
     }
-
     if (!isNaN(salaryNum) && salaryNum > incomeNum) {
       setError("❌ Current salary cannot be greater than yearly income.");
       setErrorKey(prev => prev + 1);
@@ -135,6 +124,7 @@ export default function FinanceForm({ setResult }) {
       setLoading(false);
     }
   };
+
   return (
     <div className="form-container">
       <form onSubmit={handleSubmit} className="finance-form">
@@ -162,8 +152,7 @@ export default function FinanceForm({ setResult }) {
             </div>
             <div className="input-group">
               <label className="input-label">Inflation Rate (Optional)</label>
-              <input type="number" value={inflationRate} onChange={(e) => setInflationRate(e.target.value)} placeholder="%(auto/leave blank)"
- className="form-input" />
+              <input type="number" value={inflationRate} onChange={(e) => setInflationRate(e.target.value)} placeholder="%(auto/leave blank)" className="form-input" />
             </div>
           </div>
         </div>

@@ -3,7 +3,7 @@ import xgboost as xgb
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 from datetime import datetime
-from cpi_utils import get_yearly_inflation_rate
+from backend.cpi_utils import get_yearly_inflation_rate
 import numpy as np
 
 def predict_future_salary(current_salary, inflation_rate, dataset_path):

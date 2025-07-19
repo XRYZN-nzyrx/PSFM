@@ -5,7 +5,7 @@ import os
 
 #  Base path
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-cpi_data_path = os.path.join(BASE_DIR, "datasets", "CPIndex_2014-To-2024.csv")
+cpi_data_path = os.path.join(BASE_DIR, "Datasets", "CPIndex_2014-To-2024.csv")
 
 #  Load CPI data once globally
 cpi_data_raw = pd.read_csv(cpi_data_path, skiprows=1)

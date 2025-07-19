@@ -29,8 +29,8 @@ app.add_middleware(
 
 # Define paths
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-EXPENSE_DATA_PATH = os.path.join(BASE_DIR, "datasets", "logistic_regression_product_dataset_10000.csv")
-SALARY_DATA_PATH = os.path.join(BASE_DIR, "datasets", "salarydata.csv")
+EXPENSE_DATA_PATH = os.path.join(BASE_DIR, "Datasets", "logistic_regression_product_dataset_10000.csv")
+SALARY_DATA_PATH = os.path.join(BASE_DIR, "Datasets", "salarydata.csv")
 
 # Mount static files from React build
 app.mount("/static", StaticFiles(directory="frontend/build/static"), name="static")

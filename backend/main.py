@@ -19,7 +19,7 @@ app = FastAPI(title="Personal Finance Management API")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://your-frontend-url.onrender.com",  # 🔁 Replace with actual frontend Render URL
+        "https://personal-finance-manager-wne3.onrender.com", 
         "http://localhost:3000"
     ],
     allow_credentials=True,

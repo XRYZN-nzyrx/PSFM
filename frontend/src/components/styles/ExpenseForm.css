@@ -46,16 +46,16 @@
 .form-title {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 900;
   color: #ffffff;
-  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 1);
 }
 
 .form-subtitle {
   font-size: 1rem;
-  color: #cccccc;
+  color: #ffffff;
   margin: 0;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 /* Input sections */
@@ -65,13 +65,13 @@
 
 .section-title {
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 800;
   color: #f8fafc;
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }
 
 .input-grid {
@@ -87,10 +87,10 @@
 
 .input-label {
   font-size: 0.9rem;
-  font-weight: 500;
-  color: #f8fafc;
+  font-weight: 700;
+  color: #ffffff;
   margin-bottom: 0.5rem;
-  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }
 
 .form-input,
@@ -106,6 +106,9 @@
   width: 100%;
   box-sizing: border-box;
   white-space: normal;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
   
 }
 
@@ -119,8 +122,8 @@
 .form-input::placeholder,
 .form-select::placeholder,
 ::placeholder {
-  color: #f1f5f9 !important;
-  opacity: 0.9;
+  color: #ffffff !important;
+  opacity: 1;
 }
 
 /* Expenses Section */
@@ -145,10 +148,11 @@
   padding: 0.9rem 1.8rem;
   border-radius: 0.6rem;
   font-size: 1.15rem;      
-  font-weight: 700;       
+  font-weight: 900;       
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: none;
+  letter-spacing: 0.5px;
 }
 
 
@@ -226,7 +230,7 @@
 .success-message {
   background: transparent;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 800;
   text-align: center;
   margin-top: 1.5rem;
   padding: 1rem 1.5rem;
@@ -424,4 +428,7 @@ input[type="number"],
   padding-right: 12px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 1);
 }

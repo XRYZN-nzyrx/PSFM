@@ -40,7 +40,7 @@ function ResultsDisplay({ data }) {
         <p>✅ Essential: {formatCurrency(essential_total)}</p>
         <p>💎 Luxury: {formatCurrency(luxury_total)}</p>
       </div>
-
+        
       <div className="results-section">
         <h3>💰 Savings Analysis:</h3>
         <p>Estimated Savings Potential: {formatCurrency(savings_potential)}</p>
